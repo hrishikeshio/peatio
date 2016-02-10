@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 4.0.12'
 gem 'rails-i18n'
 
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.18'
 gem 'daemons-rails'
 gem 'redis-rails'
 
@@ -12,10 +12,12 @@ gem 'json'
 gem 'jbuilder'
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-gem 'doorkeeper', '~> 1.4.1'
-gem 'omniauth', '~> 1.2.1'
-gem 'omniauth-identity', '~> 1.1.1'
+gem 'doorkeeper'#, '~> 1.4.1'
+gem 'omniauth'#, '~> 1.2.1'
+gem 'omniauth-identity'#, '~> 1.1.1'
 gem 'omniauth-weibo-oauth2', '~> 0.4.0'
+
+gem 'protected_attributes'
 
 gem 'figaro'
 gem 'hashie'
