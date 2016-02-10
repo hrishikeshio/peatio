@@ -9,7 +9,7 @@ describe Market do
 
   context 'markets hash' do
     it "should list all markets info" do
-      Market.to_hash.should == {:btcinr=>{:name=>"BTC/inr", :base_unit=>"btc", :quote_unit=>"inr"}}
+      Market.to_hash.should == {:btcinr=>{:name=>"BTC/INR", :base_unit=>"btc", :quote_unit=>"inr"}}
     end
   end
 
@@ -17,7 +17,7 @@ describe Market do
     subject { Market.find('btcinr') }
 
     its(:id)         { should == 'btcinr' }
-    its(:name)       { should == 'BTC/inr' }
+    its(:name)       { should == 'BTC/INR' }
     its(:base_unit)  { should == 'btc' }
     its(:quote_unit) { should == 'inr' }
     its(:visible)    { should be_true }
