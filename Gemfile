@@ -86,6 +86,7 @@ group :development, :test do
   gem 'timecop'
   gem 'dotenv-rails'
   gem 'rspec-rails'
+  gem 'rspec-its'
   gem 'byebug'
 end
 
